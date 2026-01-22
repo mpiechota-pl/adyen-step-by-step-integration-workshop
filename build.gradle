@@ -21,4 +21,5 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    implementation 'com.adyen:adyen-java-api-library:40.1.0'
 }

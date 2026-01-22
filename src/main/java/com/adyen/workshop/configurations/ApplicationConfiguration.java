@@ -8,16 +8,16 @@ public class ApplicationConfiguration {
     @Value("${server.port}")                    // This will be prefilled from application.properties (e.g. port 8080)
     private int serverPort;
 
-    @Value("${YOUR_ENVIRONMENT_VAR_1:#{null}}") // This will be prefilled from application.properties
+    @Value("${apiKey:#{null}}") // This will be prefilled from application.properties
     private String adyenApiKey;
 
-    @Value("${YOUR_ENVIRONMENT_VAR_2:#{null}}") // This will be prefilled from application.properties
+    @Value("${merchantAccount:#{null}}") // This will be prefilled from application.properties
     private String adyenMerchantAccount;
 
-    @Value("${YOUR_ENVIRONMENT_VAR_3:#{null}}") // This will be prefilled from application.properties
+    @Value("${clientKey:#{null}}") // This will be prefilled from application.properties
     private String adyenClientKey;
 
-    @Value("${YOUR_ENVIRONMENT_VAR_4:#{null}}") // This will be prefilled from application.properties
+    @Value("${hmac:#{null}}") // This will be prefilled from application.properties
     private String adyenHmacKey;
 
     public String getAdyenApiKey() {
